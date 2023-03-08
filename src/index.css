@@ -1,0 +1,199 @@
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #FFFFFF;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
+
+@font-face {
+  font-family: proxima-nova-x-bold;
+  src: url(./FontsFree-Net-Proxima-Nova-Xbold.otf);
+}
+
+html, body {
+  padding: 0 !important;
+  margin: 0 !important;
+  background: linear-gradient(top right, #000000, #ffffff);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+h1 {
+  font-family: proxima-nova-x-bold;
+}
+
+.title {
+  font-size: 50px;
+  color: white;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%; 
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
+
+.prompt-input {
+  background-color: rgba(34, 34, 38, 1);
+  height: 50px;
+    /* padding: 0px; */
+    /* box-sizing: border-box; */
+  line-height: 100px;
+  /* box-sizing: content-box; */
+    /* Set the box-sizing property */
+    /* vertical-align: top; */
+    /* Set the vertical-align property */
+  /* font-size: 50px; */
+  width: 100%;
+  border: none;
+  outline: none;
+  color: white;
+  
+}
+
+
+.cs-message__content {
+  background-color: #262626 !important;
+  color: white !important;
+  border: .5px solid white;
+  margin-top:1rem;
+  
+}
+
+.cs-message--outgoing .cs-message__content{
+  background-color: #565656 !important;
+  border-radius: .5rem;
+  color: white !important;
+}
+
+.cs-message-list {
+  background: none;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 1rem; */
+  width: 99%;
+  
+  
+}
+
+.send-button {
+  border: none;
+  background: red;
+  width: 400px;
+  height: 40px;
+  /* padding: 0%; */
+  
+}
+
+
+.scrollbar-container {
+  background-color: rgba(34, 34, 38, .6);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+
+.cs-typing-indicator {
+  background-color: rgba(34, 34, 38, 0) !important;
+  color: white !important;
+    border-bottom-left-radius: 1rem !important;
+      border-bottom-right-radius: 1rem !important;
+  
+}
+
